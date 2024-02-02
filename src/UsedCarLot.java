@@ -90,7 +90,6 @@ public class UsedCarLot
      */
     public void moveCar(int indexOfCarToMove, int destinationIndex)
     {
-        addCar(destinationIndex, inventory.get(indexOfCarToMove));
-        sellCarShift(indexOfCarToMove);
+        addCar(destinationIndex, sellCarShift(indexOfCarToMove));
     }
 }
